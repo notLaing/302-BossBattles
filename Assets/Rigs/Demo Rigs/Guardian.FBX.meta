@@ -5,7 +5,7 @@ ModelImporter:
   internalIDToNameTable:
   - first:
       74: 3777608681417285107
-    second: armature|attack
+    second: attack
   - first:
       74: 8948746577610024085
     second: armature|attack2
@@ -23,10 +23,28 @@ ModelImporter:
     second: armature|idle
   - first:
       74: -5527425017787413270
-    second: armature|walk
+    second: walk
+  - first:
+      74: -5612658629409835226
+    second: attack2
+  - first:
+      74: -6758483313513240000
+    second: death
+  - first:
+      74: 2459078804267041145
+    second: hit
+  - first:
+      74: -8739477701805975817
+    second: hit2
+  - first:
+      74: -5252816984213320552
+    second: idle
+  - first:
+      74: 5812220751296067160
+    second: walk_loop
   externalObjects: {}
   materials:
-    materialImportMode: 2
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -54,7 +72,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: armature|attack
+      name: attack
       takeName: armature|attack
       internalID: 0
       firstFrame: 0
@@ -83,7 +101,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: armature|attack2
+      name: attack2
       takeName: armature|attack2
       internalID: 0
       firstFrame: 0
@@ -112,7 +130,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: armature|death
+      name: death
       takeName: armature|death
       internalID: 0
       firstFrame: 0
@@ -141,7 +159,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: armature|hit
+      name: hit
       takeName: armature|hit
       internalID: 0
       firstFrame: 0
@@ -170,7 +188,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: armature|hit2
+      name: hit2
       takeName: armature|hit2
       internalID: 0
       firstFrame: 0
@@ -199,7 +217,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: armature|idle
+      name: idle
       takeName: armature|idle
       internalID: 0
       firstFrame: 0
@@ -228,7 +246,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: armature|walk
+      name: walk
       takeName: armature|walk
       internalID: 0
       firstFrame: 0
@@ -256,6 +274,35 @@ ModelImporter:
       maskType: 3
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: walk_loop
+      takeName: armature|walk
+      internalID: 0
+      firstFrame: 10
+      lastFrame: 28.7
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 0
   meshes:
     lODScreenPercentages: []
@@ -264,10 +311,10 @@ ModelImporter:
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
-    importVisibility: 1
-    importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
