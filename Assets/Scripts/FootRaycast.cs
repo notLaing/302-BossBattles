@@ -74,5 +74,9 @@ public class FootRaycast : MonoBehaviour
             groundRotation = Quaternion.FromToRotation(Vector3.up, hitInfo.normal) * worldNeutral;
 
         }
+
+        //the lines that actually cause the foot position to move (in this script)
+        //transform.position = groundPosition;
+        //transform.rotation = groundRotation;
     }
 }

@@ -1,29 +1,11 @@
 fileFormatVersion: 2
-guid: c850da744b3daff4b9f0409ce29edd2b
+guid: 1dc38540100219544b74a54a185c8e64
 ModelImporter:
   serializedVersion: 21202
-  internalIDToNameTable:
-  - first:
-      74: -4552515205397978273
-    second: Armature|Attack1
-  - first:
-      74: 5866576275671282845
-    second: Armature|death
-  - first:
-      74: -461023766659263400
-    second: Armature|IdleLoop
-  - first:
-      74: 1560411764505617523
-    second: Armature|SporeAttack
-  - first:
-      74: 3594835828463911573
-    second: Armature|takeDamage
-  - first:
-      74: -2144794013314653063
-    second: Armature|walkCycleLoop
+  internalIDToNameTable: []
   externalObjects: {}
   materials:
-    materialImportMode: 0
+    materialImportMode: 2
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -53,15 +35,15 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.25
+    globalScale: 40
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
-    importVisibility: 0
-    importBlendShapes: 0
-    importCameras: 0
-    importLights: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
@@ -106,7 +88,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.25
+    globalScale: 0.39999998
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
