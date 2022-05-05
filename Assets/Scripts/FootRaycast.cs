@@ -8,7 +8,7 @@ public class FootRaycast : MonoBehaviour
     public float raycastLength = 2;
 
     ///<summary>The local-space position of where the IK spawned</summary>
-    private Vector3 startingPosition;
+    public Vector3 startingPosition;
     ///<summary>The local-space rotation of where the IK spawned</summary>
     private Quaternion startingRotation;
     ///<summary>The world-space position of the ground above/below the foot IK.</summary>
