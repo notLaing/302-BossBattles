@@ -256,4 +256,9 @@ public class PlayerMovement : MonoBehaviour
     {
         //
     }
+
+    public void TakeDamage()
+    {
+        --health;
+    }
 }
