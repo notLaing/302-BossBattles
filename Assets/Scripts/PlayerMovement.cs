@@ -126,8 +126,8 @@ public class PlayerMovement : MonoBehaviour
         {
             swordHitScript.attacking = false;
             swordHitScript.struck = false;
+            attackTime = -1;
         }
-        if (attackTime < -1) attackTime = -1;
         
         Animate();
     }
