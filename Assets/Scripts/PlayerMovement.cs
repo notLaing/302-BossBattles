@@ -122,7 +122,11 @@ public class PlayerMovement : MonoBehaviour
         }
         attackTime -= Time.deltaTime;
         if (attackTime >= 0) mode = Mode.Attack1;
-        else swordHitScript.attacking = false;
+        else
+        {
+            swordHitScript.attacking = false;
+            swordHitScript.struck = false;
+        }
         if (attackTime < -1) attackTime = -1;
         
         Animate();

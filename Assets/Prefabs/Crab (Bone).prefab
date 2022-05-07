@@ -1162,6 +1162,7 @@ MonoBehaviour:
   pointScript: {fileID: 6755392105915493613}
   shootScript: {fileID: 6755392105915493612}
   state: 0
+  healthBar: {fileID: 0}
   health: 50
 --- !u!195 &6755392105701875260
 NavMeshAgent:

@@ -890,6 +890,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crab (Bone)
       objectReference: {fileID: 0}
+    - target: {fileID: 6755392105701875262, guid: e6ebc882684c8af4c9d92c16470327fe,
+        type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1308011631}
     - target: {fileID: 6755392105701875263, guid: e6ebc882684c8af4c9d92c16470327fe,
         type: 3}
       propertyPath: m_RootOrder

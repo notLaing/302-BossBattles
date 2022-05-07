@@ -35,7 +35,7 @@ public class PointAt : MonoBehaviour
         //if(playerTargeting && playerTargeting.target && playerTargeting.playerWantsToAim)//comment this out while refactoring
         if(target != null)
         {
-            Vector3 vToTarget = target.position - transform.position;
+            Vector3 vToTarget = (target.position + Vector3.up) - transform.position;//Vector3.up is solely for the crab. Player's transform is at their feet
             vToTarget.Normalize();
 
             Quaternion worldRot = Quaternion.LookRotation(vToTarget, Vector3.up);

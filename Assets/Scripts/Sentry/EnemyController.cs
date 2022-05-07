@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 public enum EnemyState
 {
@@ -30,6 +31,7 @@ public class EnemyController : MonoBehaviour
     float huntDistSqrd = 2500f;
     float curDistToPlayer;
     float deathAnimTime = 3f;
+    public Image healthBar;
     public int health = 50;
     bool dieOnce = false;
 
@@ -80,6 +82,8 @@ public class EnemyController : MonoBehaviour
     {
         targetLocation = navTarget.transform.position - transform.position;
         curDistToPlayer = targetLocation.sqrMagnitude;
+
+        healthBar.fillAmount = (float)(health / 50f);
 
         if(health <= 0)
         {
