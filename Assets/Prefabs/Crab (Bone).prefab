@@ -1080,7 +1080,7 @@ GameObject:
   - component: {fileID: 6755392105701875235}
   m_Layer: 0
   m_Name: Crab (Bone)
-  m_TagString: Untagged
+  m_TagString: Crab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1159,6 +1159,7 @@ MonoBehaviour:
   leftOddOuterBackJoint: {fileID: 6755392106700031482}
   leftEvenOuterFrontJoint: {fileID: 6755392105594255652}
   leftEvenOuterBackJoint: {fileID: 6755392105445095209}
+  pointScript: {fileID: 6755392105915493613}
   shootScript: {fileID: 6755392105915493612}
   state: 0
   health: 50
@@ -1877,6 +1878,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc2e89cff2effa449bd2aa7359448bbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectile: {fileID: 4689499316429473532, guid: 234933f6c46f56c45ba2467facd16341,
+    type: 3}
+  projectileSpawner: {fileID: 6755392107320094834}
+  shootTime: 3
 --- !u!1 &6755392105952162162
 GameObject:
   m_ObjectHideFlags: 0

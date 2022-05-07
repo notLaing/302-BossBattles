@@ -22,7 +22,7 @@ public class EnemyController : MonoBehaviour
         rightOddOuterFrontJoint, rightOddOuterBackJoint, rightEvenOuterFrontJoint, rightEvenOuterBackJoint,
         leftOddOuterFrontJoint, leftOddOuterBackJoint, leftEvenOuterFrontJoint, leftEvenOuterBackJoint;
     Transform[] legJoints = new Transform[16];
-    /*public PointAt pointScript;*/
+    public PointAt pointScript;
     public Shooter shootScript;
     public EnemyState state = EnemyState.Idle;
     Vector3 targetLocation;
@@ -40,8 +40,8 @@ public class EnemyController : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         agent.speed = 5;
 
-        /*PlayerTargeting player = FindObjectOfType<PlayerTargeting>();
-        navTarget = player.transform;*/
+        PlayerMovement player = FindObjectOfType<PlayerMovement>();
+        navTarget = player.transform;
 
         /*fill legJoints in order of similarly moving legs
          * right vs left: side of the crab
@@ -85,7 +85,7 @@ public class EnemyController : MonoBehaviour
         {
             state = EnemyState.Death;
             agent.destination = transform.position;
-            /*pointScript.enabled = false;*/
+            pointScript.enabled = false;
         }
         //move only if the player is within distance
         else if (navTarget && curDistToPlayer < huntDistSqrd)
@@ -98,20 +98,20 @@ public class EnemyController : MonoBehaviour
             {
                 state = EnemyState.Aiming;
 
-                /*if(shootScript.shootTime <= 0f)
+                if(shootScript.shootTime <= 0f)
                 {
                     state = EnemyState.Attacking;
-                }*/
+                }
             }
             else
             {
-                /*pointScript.target = null;*/
+                pointScript.target = null;
             }
         }
         else
         {
             state = EnemyState.Idle;
-            /*pointScript.target = null;*/
+            pointScript.target = null;
         }
         
 
@@ -226,14 +226,14 @@ public class EnemyController : MonoBehaviour
 
     void AnimateAim()
     {
-        /*pointScript.target = navTarget;*/
+        pointScript.target = navTarget;
     }
 
     void AnimateAttack()
     {
-        /*shootScript.shootTime += 3f;
+        shootScript.shootTime += 3f;
         shootScript.Shoot();
-        shootScript.transform.localEulerAngles += new Vector3(-30, 0, 0);*/
+        shootScript.transform.localEulerAngles += new Vector3(-30, 0, 0);
     }
 
     void AnimateDeath()

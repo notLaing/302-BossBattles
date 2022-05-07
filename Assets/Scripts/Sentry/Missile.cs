@@ -27,7 +27,7 @@ public class Missile : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.name == "Player")
+        if (other.tag == "Player")
         {
             other.GetComponent<PlayerMovement>().TakeDamage();
         }

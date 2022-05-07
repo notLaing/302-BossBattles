@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Shooter : MonoBehaviour
 {
-    /*public GameObject projectile;
+    public GameObject projectile;
     public Transform projectileSpawner;
     EnemyController sentryScript;
     PointAt pointScript;
@@ -37,7 +37,7 @@ public class Shooter : MonoBehaviour
             //time ticks if < 30 units away
             if (distToPlayer <= 900f)
             {
-                shootTime -= Time.deltaTime;*/
+                shootTime -= Time.deltaTime;
                 /*if (shootTime <= 0f)
                 {
                     //shoot
@@ -48,12 +48,12 @@ public class Shooter : MonoBehaviour
                     //shootTime += 5f;
                 }
                 else canShoot = true;*/
-            /*}
+            }
         }
     }
 
     public void Shoot()
     {
         Instantiate(projectile, projectileSpawner.position, projectileSpawner.rotation);
-    }*/
+    }
 }
